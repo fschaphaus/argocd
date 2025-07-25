@@ -2,8 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook
-  namespace: argocd
 spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
   project: core
   source:
     path: helm-guestbook
