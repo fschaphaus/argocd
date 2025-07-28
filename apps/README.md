@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: default
     server: https://kubernetes.default.svc
-  project: core
+  project: system-components
   source:
     path: helm-guestbook
     repoURL: https://github.com/argoproj/argocd-example-apps.git
